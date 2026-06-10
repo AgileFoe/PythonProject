@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Delete text{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ article.title }}</h1>
+        <h3>Delete text</h3>
+        <form method="post">
+            {% csrf_token %}
+
+            <button class="btn btn-info" type="submit">sumbit</button>
+        </form>
+    </div>
+{% endblock %}
